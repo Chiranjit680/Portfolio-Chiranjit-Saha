@@ -78,6 +78,7 @@ export const leadership = [
 export const featuredExperience = {
   role: 'Project Intern',
   company: 'Oracle India Private Limited',
+  logo: '/images/oracle/logo.png',
   location: 'Bengaluru, India',
   period: 'May 2026 – Jul 2026',
   project: 'Oracle SaaS Support Assist',

@@ -102,7 +102,17 @@ function Featured() {
         <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
           <div>
             <p className="mb-2 font-mono text-xs tracking-widest text-accent uppercase">Featured · {ex.period}</p>
-            <h2 className="text-3xl font-semibold tracking-tight text-white">{ex.company}</h2>
+            <div className="flex items-center gap-4">
+              {ex.logo && (
+                <img
+                  src={ex.logo}
+                  alt="Oracle logo"
+                  onError={(e) => (e.currentTarget.style.display = 'none')}
+                  className="h-12 w-auto shrink-0 rounded-lg bg-white p-2"
+                />
+              )}
+              <h2 className="text-3xl font-semibold tracking-tight text-white">{ex.company}</h2>
+            </div>
             <p className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-soft">
               <span className="flex items-center gap-1.5">
                 <Briefcase size={15} className="text-muted" /> {ex.role}
