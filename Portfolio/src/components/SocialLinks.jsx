@@ -1,11 +1,10 @@
 import { Mail } from 'lucide-react'
 import { profile, socials } from '../data/profile'
-import { GitHubIcon, LeetCodeIcon, LinkedInIcon } from './BrandIcons'
+import { GitHubIcon, LinkedInIcon } from './BrandIcons'
 
 const socialLinks = [
   { href: socials.github, label: 'GitHub', Icon: GitHubIcon },
   { href: socials.linkedin, label: 'LinkedIn', Icon: LinkedInIcon },
-  { href: socials.leetcode, label: 'LeetCode', Icon: LeetCodeIcon },
   { href: `mailto:${profile.email}`, label: 'Email', Icon: Mail },
 ]
 

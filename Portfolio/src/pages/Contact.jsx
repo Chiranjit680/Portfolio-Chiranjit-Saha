@@ -2,13 +2,12 @@ import { useState } from 'react'
 import { ArrowUpRight, Check, Copy, Loader2, Mail, Send } from 'lucide-react'
 import { Page, Reveal } from '../components/Motion'
 import { PageHeader } from '../components/Section'
-import { GitHubIcon, LeetCodeIcon, LinkedInIcon } from '../components/BrandIcons'
+import { GitHubIcon, LinkedInIcon } from '../components/BrandIcons'
 import { formspreeId, profile, socials } from '../data/profile'
 
 const channels = [
   { label: 'LinkedIn', note: 'Best for opportunities', href: socials.linkedin, Icon: LinkedInIcon },
   { label: 'GitHub', note: 'Code & experiments', href: socials.github, Icon: GitHubIcon },
-  { label: 'LeetCode', note: '700+ problems solved', href: socials.leetcode, Icon: LeetCodeIcon },
 ]
 
 const field =
